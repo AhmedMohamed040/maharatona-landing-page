@@ -34,7 +34,11 @@ const modifiedTheme = {
     ...theme.palette,
     primary: {
       ...theme.palette.primary,
-      dark: "#1b76ba",
+      lightest: "#EBF8F8",
+      light:"#B8D0DF",
+      main:'#84A7C5',
+      dark: "#1D5691",
+      darkest:"#1D5691"
     },
   },
   breakpoints: {

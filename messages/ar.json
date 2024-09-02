@@ -1,3 +1,14 @@
 {
-  "Global": {}
+  "Global": {
+    "Navbar": {
+      "Home":"الرئيسية",
+      "FQA":"الاسئلة الشائعة",
+      "Contact Us":"تواصل معنا",
+      "Join as a partner":"انضم كشريك",
+      "Download":"حمل التطبيق"
+    },
+    "Footer":{
+      "Copyright":"(جميع الحقوق محفوظة لمهاراتنا ٢٠٢٤)"
+    }
+  }
 }

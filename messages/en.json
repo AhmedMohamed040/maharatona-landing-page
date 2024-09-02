@@ -1,5 +1,16 @@
 {
-  "Global": {},
+  "Global": {
+    "Navbar": {
+      "Home":"Home",
+      "FQA":"FQA",
+      "Contact Us":"Contact Us",
+      "Join as a partner":"Join as a partner",
+      "Download":"Download App"
+    },
+    "Footer":{
+      "Copyright":"(All rights reserved to Maharatona 2024)"
+    }
+  },
   "Pages": {
     "Home": {
       "Hero": {
