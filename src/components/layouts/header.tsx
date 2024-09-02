@@ -4,8 +4,9 @@ import Stack from "@mui/material/Stack";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import { createTheme, ThemeProvider, useTheme } from "@mui/material/styles";
-import { InputAdornment, MenuItem, useMediaQuery } from "@mui/material";
+import { Button, InputAdornment, MenuItem, useMediaQuery } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
+import {useTranslations} from 'next-intl';
 import React, { useEffect, useMemo, useState } from "react";
 import {
   Box,
@@ -57,26 +58,23 @@ const OPTIONS = [
     linkTo: "/#2",
   },
 ];
-const LINKS = [
+const Items = [
   {
-    label: "facebook",
-    linkTo: "https://facebook.com",
-    icon: "devicon-plain:facebook",
+    label: "Join as a partner",
+    href:"#Join"
   },
   {
-    label: "twitter",
-    linkTo: "https://x.com",
-    icon: "mdi:twitter",
+    label: "Contact Us",
+    href:"#Contact_Us"
   },
   {
-    label: "youtube",
-    linkTo: "https://youtube.com",
-    icon: "mdi:youtube",
+    label: "FQA",
+    href:"#FQA"
   },
+  
   {
-    label: "instagram",
-    linkTo: "https://instagram.com",
-    icon: "lets-icons:insta",
+    label: "Home",
+    href:"#Home"
   },
 ];
 
@@ -98,6 +96,7 @@ const user = {
   isPublic: true,
 };
 export default function Header(props: Props) {
+  const t = useTranslations();
   const { window } = props;
   const [menuOpen, setMenuOpen] = React.useState(false);
   const route = useRouter();
@@ -105,7 +104,7 @@ export default function Header(props: Props) {
     setMenuOpen((prevState) => !prevState);
   };
   const theme = useTheme();
-  const sm = useMediaQuery(theme.breakpoints.up("md"));
+  const sm = useMediaQuery(theme.breakpoints.down("md"));
   const popover = usePopover();
 
   const drawer = (
@@ -131,20 +130,20 @@ export default function Header(props: Props) {
         <Box
           component="img"
           alt="auth"
-          src={"/assets/WEBIZI 7.png"}
+          src={"/assets/logo/logo.svg"}
           sx={{
             my: 2,
             mx: "auto",
             display: "block",
-            width: { xs: 40, md: 70 },
-            height: { xs: 40, md: 70 },
+            width: { xs: 50, md: 85 },
+            height: { xs: 50, md: 70 },
           }}
         />
       </Link>
 
       <Divider />
       <List>
-        {navItems.map((item) => (
+        {Items.map((item) => (
           <ListItem key={item.label} disablePadding>
             <ListItemButton
               sx={{
@@ -194,13 +193,10 @@ export default function Header(props: Props) {
     window !== undefined ? () => window().document.body : undefined;
 
   const renderLinks = (
-    <Box sx={{ color: "#000", display: "flex" }}>
-      {LINKS.map((link) => (
-        <MenuItem key={link.label} onClick={() => handleClickItem(link.linkTo)}>
-          <Iconify
-            icon={link.icon}
-            sx={{ height: "25px", width: "25px", color: "#919EAB" }}
-          />
+    <Box sx={{display:sm?'none':'flex', color: "#000" }}>
+      {Items.map((item) => (
+        <MenuItem sx={{color:'#1D5691', fontWeight:'bold'}} key={item.label} onClick={() => handleClickItem(item.href)}>
+          {t(`Global.Navbar.${item.label}`)}
         </MenuItem>
       ))}
     </Box>
@@ -212,6 +208,7 @@ export default function Header(props: Props) {
       edge="end"
       onClick={handleDrawerToggle}
       sx={{
+        display:sm? 'block': 'none',
         mr: 1,
         color: isScrolled ? "black" : "white",
       }}
@@ -245,23 +242,17 @@ export default function Header(props: Props) {
   const renderLogo = (
     <Link
       href="/"
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: 2,
-        flexWrap: "wrap",
-        textDecoration: "none",
-      }}
+
     >
       <Box
         component="img"
         alt="auth"
-        src="/assets/WEBIZI 7.png"
+        src="/assets/logo/logo.svg"
         sx={{
           cursor: "pointer",
           display: "block",
-          width: { xs: 60 },
-          height: { xs: 60 },
+          width: { xs: 70 , md:100},
+          height: { xs: 70, md:70 },
         }}
       />
     </Link>
@@ -376,34 +367,36 @@ export default function Header(props: Props) {
       <AppBar
         component="nav"
         sx={{
-          bgcolor: "#fff",
+          bgcolor: "#EBF8F8",
           boxShadow: "none",
-          padding: { md: "10px 70px", xs: "10px 10px" },
+         py:{xs:0.5,md:2},px:{xs:1,md:4},
         }}
       >
         <Toolbar
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            py: 2,
           }}
         >
-          {renderLinks}
-          <LocaleButton />
-        </Toolbar>
-        <Toolbar
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            py: 2,
-          }}
-        >
-          {renderMenu}
           {renderNavToggler}
+          <Box>
+
+          <Button sx={{
+            fontWeight:'bold',
+            fontSize:{xs:12,md:15},
+            borderRadius:4,border:2, '&:hover':{border:2},
+            color:(theme)=>theme.palette.primary.dark, 
+            borderColor:(theme)=>theme.palette.primary.dark}} variant="outlined" >
+            {t('Global.Navbar.Download')}
+          </Button>
+          <LocaleButton />
+
+          </Box>
+          {renderLinks}
+          {renderMenu}
           {renderLogo}
-          {renderSearch}
-          {renderDropDown}
         </Toolbar>
+    
       </AppBar>
     </Box>
   );

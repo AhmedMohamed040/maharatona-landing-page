@@ -19,11 +19,11 @@ export default function LocaleButton() {
       href={link}
       sx={{
         fontSize: { xs: "14px", md: "16px" },
-        fontWeight: "light",
+        fontWeight: "bold",
         bg: "#919EAB",
       }}
     >
-      {LocalesNames[anotherLocale]}
+      {currentLocale}
     </Button>
   );
 }
