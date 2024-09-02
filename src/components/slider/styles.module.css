@@ -1,0 +1,22 @@
+.all_wrapper {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-bottom: 1rem;
+}
+
+.swiper_container {
+  padding-inline: 3rem;
+}
+@media (max-width: 544px) {
+  .swiper_container {
+    overflow: visible;
+    width: 400px;
+  }
+}
+
+@media (min-width: 545px) {
+  .swiper_container {
+    width: auto;
+  }
+}

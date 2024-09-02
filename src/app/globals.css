@@ -1,0 +1,72 @@
+body {
+  --accent-dark: #f2cb00;
+  --accent-main: #ffdb00;
+  --accent-light: #ffe963;
+
+  --primary-dark: #020303;
+  --primary-light: #fff;
+
+  --secondary-light: #fafafa;
+
+  --container-px: 1.25rem;
+  --container-py: 60px;
+  --section-py: 60px;
+
+  --header-height: 145px;
+}
+@media (min-width: 545px) {
+  body {
+    --section-py: 80px;
+  }
+}
+@media (min-width: 1025px) {
+  body {
+    --container-py: 70px;
+    --section-py: 100px;
+  }
+}
+
+/* ====== Resets ====== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+.slick-slide{ 
+  margin: 0 20px;
+}
