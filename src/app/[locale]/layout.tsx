@@ -1,19 +1,10 @@
 import { Locales, locales } from "@/config-locale";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
-import { Roboto } from "next/font/google";
 import Footer from "@/components/layouts/footer";
 import Header from "@/components/layouts/header";
 import { ThemeProvider } from "@mui/material";
 import theme from "@/lib/hooks/mui/theme";
-
-// Base Font
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-});
-
 export default async function LocaleLayout({
   children,
   params: { locale },
@@ -27,11 +18,11 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={roboto.className} suppressHydrationWarning>
+      <body  >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider theme={theme}>
             <Header />
-            <main style={{ minHeight: 300, marginTop: "184px" }}>
+            <main style={{ minHeight: 300, marginTop: "120px" }}>
               {children}
             </main>
             <Footer />

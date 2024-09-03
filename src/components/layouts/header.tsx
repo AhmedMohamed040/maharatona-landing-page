@@ -195,7 +195,7 @@ export default function Header(props: Props) {
   const renderLinks = (
     <Box sx={{display:sm?'none':'flex', color: "#000" }}>
       {Items.map((item) => (
-        <MenuItem sx={{color:'#1D5691', fontWeight:'bold'}} key={item.label} onClick={() => handleClickItem(item.href)}>
+        <MenuItem  sx={{ fontSize: {xs:12, md:17.5},color:'#1D5691', fontWeight:'600'}} key={item.label} onClick={() => handleClickItem(item.href)}>
           {t(`Global.Navbar.${item.label}`)}
         </MenuItem>
       ))}
@@ -382,7 +382,8 @@ export default function Header(props: Props) {
           <Box>
 
           <Button sx={{
-            fontWeight:'bold',
+            fontWeight:'600',
+            mx:0.5,
             fontSize:{xs:12,md:15},
             borderRadius:4,border:2, '&:hover':{border:2},
             color:(theme)=>theme.palette.primary.dark, 
