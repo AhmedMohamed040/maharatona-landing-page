@@ -38,10 +38,9 @@ export default function Footer(props: Props) {
   const t = useTranslations();
 
   return (
-    <Box>
+    <Box sx={{position:'relative',mt:'auto',  bottom: 0, width:'100%' ,hieght:100}}>
 
       <Box >
-        <Container>
 
           <Grid sx={{ px: 6 }} justifyContent="space-between" container alignItems="center" spacing={3}>
             <Grid xs={12} md={4} sx={{ display: "flex", justifyContent: { md: 'flex-start', xs: 'center' } }}>
@@ -61,7 +60,7 @@ export default function Footer(props: Props) {
 
 
             <Grid xs={12} md={4} sx={{ display: "flex", justifyContent:   'center'  }}>
-              <Typography variant="body2" color="primary.dark">
+              <Typography variant="body2" color="primary.dark" fontWeight="600">
                {t('Global.Footer.Copyright')}
               </Typography>
             </Grid>
@@ -78,7 +77,6 @@ export default function Footer(props: Props) {
               />
             </Grid>
           </Grid>
-        </Container>
       </Box>
 
     </Box>

@@ -7,6 +7,29 @@
       "Join as a partner":"Join as a partner",
       "Download":"Download App"
     },
+    "Section1":{
+      "mainText":"Start your journey ",
+      "subText":"towards excellence",
+      "mainText1":"Help your child find",
+      "subText1":"his strengths",
+      "mainText2":"And discover his abilities",
+      "subText2":"and talents"
+
+
+    },
+    "Section2":{
+      "title":"Feature of",
+      "title1": "Maharatona",
+      "payment":"Secure payment",
+      "branches":"Accredited Centers",
+      "use":"Ease of use",
+      "design":"Interactive and engaging design"
+    },
+    "Section3":{
+      "mainText":"With our skills, learning becomes closer",
+      "subText":"In our skills, we seek to connect you with inspiring educational centers that develop your child, and we also provide you with a platform to evaluate the centers to develop them and facilitate communication. We always seek to motivate them to be creative and find interesting courses in various fields: art, sports, self-development, and others.",
+      "subText1":"With our skills, you will find that developing your child's skills is easier and more enjoyable..."
+    },
     "Footer":{
       "Copyright":"(All rights reserved to Maharatona 2024)"
     }
