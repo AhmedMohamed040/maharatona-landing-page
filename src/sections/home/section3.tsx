@@ -38,6 +38,14 @@ function Section3(): React.JSX.Element {
         />
         </Grid>
         <Grid xs={12} md={5} display="flex" sx={{flexDirection:'column',alignItems:'center', justifyContent:'center'}}>
+        <span style={{marginRight:'auto'}}>
+            <CardMedia
+            component="img" 
+             alt="green iguana"
+            sx={{ display:'inline', mx:0.5, objectFit:'contain',height:90, width:150}}
+            image={"/assets/images/section3/line.svg"}
+        />
+            </span>
          <Typography fontWeight="600" variant="h4" color="primary.dark" sx={{unicodeBidi: 'embed', direction: 'rtl',display:'inline',mt:2,textOverflow:'nowrap',fontSize:{md:'40px',xs:'24px'},lineHeight: 2,textAlign:'right'}}>
             {t('Global.Section3.mainText')} 
             <span>
@@ -51,7 +59,7 @@ function Section3(): React.JSX.Element {
 
          </Typography>
          <br />
-         <Typography fontWeight="400" variant="h4" color="primary.dark" sx={{mt:2,textOverflow:'wrap',fontSize:{md:'18px',xs:'16px'},lineHeight: 2,textAlign:'right'}}>
+         <Typography fontWeight="400" variant="h4" color="primary.dark" sx={{unicodeBidi: 'embed', direction: 'rtl',mt:2,textOverflow:'wrap',fontSize:{md:'18px',xs:'16px'},lineHeight: 2,textAlign:'right'}}>
             {t('Global.Section3.subText')}
             <br />
             {t('Global.Section3.subText1')}
