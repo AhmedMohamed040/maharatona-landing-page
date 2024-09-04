@@ -30,6 +30,14 @@
       "subText":"In our skills, we seek to connect you with inspiring educational centers that develop your child, and we also provide you with a platform to evaluate the centers to develop them and facilitate communication. We always seek to motivate them to be creative and find interesting courses in various fields: art, sports, self-development, and others.",
       "subText1":"With our skills, you will find that developing your child's skills is easier and more enjoyable..."
     },
+    "Section4":{
+      "title":"App",
+      "title1": "Maharatona",
+      "getCourses":"access to educational courses",
+      "browserCourses":"Browse and select the course",
+      "payment":"Electronic payment",
+      "support":"Interaction and support"
+    },
     "Footer":{
       "Copyright":"(All rights reserved to Maharatona 2024)"
     }
