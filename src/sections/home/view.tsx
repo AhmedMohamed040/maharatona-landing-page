@@ -18,6 +18,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import Section2 from "./section2";
 import Section3 from "./section3";
 import Section4 from "./section4";
+import Section5 from "./section5";
 
 
 function HomeView(): React.JSX.Element {
@@ -31,8 +32,9 @@ function HomeView(): React.JSX.Element {
       <Section2/>
       <Container>
         <Section3 />
-        <Section4 />
       </Container>
+        <Section4 />
+      <Section5 />
     </Box>
   );
 }

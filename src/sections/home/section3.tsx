@@ -47,7 +47,7 @@ function Section3(): React.JSX.Element {
         />
             </span>
          <Typography fontWeight="600" variant="h4" color="primary.dark" sx={{unicodeBidi: 'embed', direction: 'rtl',display:'inline',mt:2,textOverflow:'nowrap',fontSize:{md:'40px',xs:'24px'},lineHeight: 2,textAlign:'right'}}>
-            {t('Global.Section3.mainText')} 
+            {t('Global.Section3.mainText')} <span style={{fontSize:60,color:'#ffd101'}}>!</span>
             <span>
             <CardMedia
             component="img" 

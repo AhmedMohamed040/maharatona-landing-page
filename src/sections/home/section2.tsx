@@ -45,28 +45,28 @@ function Section2(): React.JSX.Element {
                             <Box component="img" src={'/assets/images/section2/shield.svg'} sx={{ width: '100%' }} height={{ md: 120, xs: 70 }} />
                             <br />
                             <Typography fontWeight="600" component="div" variant="body1" sx={{ fontSize: { md: '24px', xs: '17px' } }} color="primary.dark" >
-                                {t('Global.Section2.title1')}
+                                {t('Global.Section2.payment')}
                             </Typography>
                         </Box>
                         <Box>
                             <Box component="img" src={'/assets/images/section2/skyscrapper.svg'} sx={{ width: '100%' }} height={{ md: 120, xs: 70 }} />
                             <br />
                             <Typography fontWeight="600" component="div" variant="body1" sx={{ fontSize: { md: '24px', xs: '17px' } }} color="primary.dark" >
-                                {t('Global.Section2.title1')}
+                                {t('Global.Section2.branches')}
                             </Typography>
                         </Box>
                         <Box>
                             <Box component="img" src={'/assets/images/section2/target.svg'} sx={{ width: '100%' }} height={{ md: 120, xs: 70 }} />
                             <br />
                             <Typography fontWeight="600" component="div" variant="body1" sx={{ fontSize: { md: '24px', xs: '17px' } }} color="primary.dark" >
-                                {t('Global.Section2.title1')}
+                                {t('Global.Section2.use')}
                             </Typography>
                         </Box>
                         <Box>
                             <Box component="img" src={'/assets/images/section2/template.svg'} sx={{ width: '100%' }} height={{ md: 120, xs: 70 }} />
                             <br />
                             <Typography fontWeight="600" component="div" variant="body1" sx={{ fontSize: { md: '24px', xs: '17px' } }} color="primary.dark" >
-                                {t('Global.Section2.title1')}
+                                {t('Global.Section2.design')}
                             </Typography>
                         </Box>
                     </Box>
