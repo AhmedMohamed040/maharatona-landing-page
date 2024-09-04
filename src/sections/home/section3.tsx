@@ -34,7 +34,7 @@ function Section3(): React.JSX.Element {
             component="img" 
              alt="green iguana"
             sx={{objectFit:'contain',mx:{xs:'auto',md:0},height:'auto', width:'100%',maxWidth:500}}
-            image={"/assets/images/section3/left.png"}
+            image={"/assets/images/section3/Left.png"}
         />
         </Grid>
         <Grid xs={12} md={5} display="flex" sx={{flexDirection:'column',alignItems:'center', justifyContent:'center'}}>
