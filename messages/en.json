@@ -10,10 +10,12 @@
     "Section1":{
       "mainText":"Start your journey ",
       "subText":"towards excellence",
-      "mainText1":"Help your child find",
-      "subText1":"his strengths",
-      "mainText2":"And discover his abilities",
-      "subText2":"and talents"
+      "mainText1":"Help",
+      "subText1":"your child",
+      "subText1-2":" find his strengths",
+      "mainText2":"And discover ",
+      "subText2":"his abilities and talents",
+      "register":"Register now"
 
 
     },
@@ -27,8 +29,8 @@
     },
     "Section3":{
       "mainText":"With our skills, learning becomes closer",
-      "subText":"In our skills, we seek to connect you with inspiring educational centers that develop your child, and we also provide you with a platform to evaluate the centers to develop them and facilitate communication. We always seek to motivate them to be creative and find interesting courses in various fields: art, sports, self-development, and others.",
-      "subText1":"With our skills, you will find that developing your child's skills is easier and more enjoyable..."
+      "subText":"At Maharatona, we seek to connect you with inspiring educational centers that develop your child, and we provide you with a platform to evaluate the centers to develop them and motivate them to be creative and communicate easier. We always seek to find interesting courses in various fields: art, sports, self-development, and others.",
+      "subText1":"With Maharatona, you will find that developing your child's skills is easier and more enjoyable..."
     },
     "Section4":{
       "title":"App",
@@ -41,11 +43,11 @@
     },
     "Section5":{
       "title":"الاسئله الشائعه",
-      "quetion1":"What are Maharatona?",
-      "quetion2":"Who are the course providers?",
-      "quetion3":"How to pay for a course?",
-      "quetion4":"What is the course cancellation policy?",
-      "quetion5":"Do you share our skills in interacting with parents and centers?",
+      "question1":"What are Maharatona?",
+      "question2":"Who are the course providers?",
+      "question3":"How to pay for a course?",
+      "question4":"What is the course cancellation policy?",
+      "question5":"Do you share our skills in interacting with parents and centers?",
       "answer1":"Maharatona is a Saudi platform that cooperates with children’s centers and clubs to create a single destination for parents to search for and register their children in educational or sports courses and programs to create a diligent and educated generation.",
       "answer2":"The courses on the app are provided by children's centers and clubs, and we do not place any restrictions on the courses.",
       "answer3": "Your payment information is processed by a third party vendor, and you will be redirected to a secure site to complete your payment. The privacy statement posted on the landing page of the site operated by the relevant third party vendor sets out how your payment details are provided and processed. Please review these terms before proceeding with any such transaction.",
