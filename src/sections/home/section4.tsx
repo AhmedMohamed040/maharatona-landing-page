@@ -33,6 +33,7 @@ function Section4(): React.JSX.Element {
               height: "auto",
               width: "100%",
               maxWidth: 500,
+              filter: "drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5))"
             }}
             image={"/assets/images/section4/Mobile-App.png"}
           />

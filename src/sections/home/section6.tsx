@@ -11,7 +11,11 @@ import {
   CardActions,
   CardContent,
   CardMedia,
+  Checkbox,
   Container,
+  FormControlLabel,
+  Stack,
+  TextField,
   Typography,
 } from "@mui/material";
 import React from "react";
@@ -24,22 +28,69 @@ function Section6(): React.JSX.Element {
   const t = useTranslations();
 
   return (
-    <Box sx={{my:4, minHeight: 550, bgcolor: "#fff",display:'flex', alignContent:"center", alignItems:"flex-end"}}>
-        <Box sx={{bgcolor:"#3cb8bb", width:'100%', height:400,borderRadius:6,}}>
+    <Box sx={{my:4, height:600}}>
+
+    <Box sx={{minHeight:200, pt:7 , mt:'auto' ,height:'100%'}}>
+   <Box sx={{  perspective:'604px',
+   perspectiveOrigin: '30% 50%',
+    bgcolor: "#fff",display:'flex', alignItems:"end", }}>
+      
+        <Box sx={{mx:'auto', transform:` skewX(165deg) rotateX(15deg)`,bgcolor:"#3cb8bb", width:'100%',maxWidth:'811px', height:{xs:300,md:'320px'},borderRadius:6,}}>
+     
+        </Box>
         <Box
           component="img"
           src="/assets/images/section6/line1.png"
           sx={{
             width: 500,
-            height: 400,
+            height: 300,
             right:0,
-            transform:'translate(-80%, -4%)',
+            transform:'translate(-60%, -10%)',
             position: "absolute",
           }}
         />
-        </Box>
+      
+        <Card raised sx={{borderRadius:4, width:'100%', maxWidth:'350px', position:'absolute',left:'16%', bottom:34}}>
+          <form>
+
+          <CardContent sx={{direction:'rtl'}}>
+            <Stack sx={{my:2}}>
+
+          <TextField 
+                    placeholder={`${t('Global.Section6.name')}`}
+
+          />
+            </Stack>
+            <Stack  sx={{my:2}}>
+
+          <TextField 
+                   placeholder={`${t('Global.Section6.email')}`}
+
+          />
+            </Stack>
+            <Stack  sx={{mt:2}}>
+
+           <TextField 
+          placeholder={`${t('Global.Section6.message')}`}
+          rows={4}
+          multiline
+          />
+            </Stack>
+          </CardContent>
+          <CardActions sx={{p:2,pt:0,  display:'flex',flexDirection:'column', alignItems:'end'}}>
+          
+          <FormControlLabel sx={{pb:1}} labelPlacement="start" label={`${t('Global.Section6.terms')}`} control={<Checkbox />} />
+          <br />
+          <Button variant="contained" sx={{alignSelf:'flex-start',boxShadow:3, borderRadius:2,bgcolor:'#3cb8bb'}}>{`${t('Global.Section6.send')}`}</Button>
+
+          </CardActions>
+          </form>
+        </Card>
+   </Box>
+    </Box>
     </Box>
   );
 }
 
 export default Section6;
+/* matrix3d matrix3d */

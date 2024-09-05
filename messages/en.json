@@ -32,6 +32,13 @@
       "subText":"At Maharatona, we seek to connect you with inspiring educational centers that develop your child, and we provide you with a platform to evaluate the centers to develop them and motivate them to be creative and communicate easier. We always seek to find interesting courses in various fields: art, sports, self-development, and others.",
       "subText1":"With Maharatona, you will find that developing your child's skills is easier and more enjoyable..."
     },
+    "Section6":{
+      "terms":"I agree to the terms and conditions",
+      "name":"Name",
+      "email":"Email",
+      "message":"Message subject",
+      "send":"Send message"
+    },
     "Section4":{
       "title":"App",
       "title1": "Maharatona",
