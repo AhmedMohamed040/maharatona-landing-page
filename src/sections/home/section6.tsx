@@ -31,11 +31,13 @@ function Section6(): React.JSX.Element {
     <Box sx={{my:4, height:600}}>
 
     <Box sx={{minHeight:200, pt:7 , mt:'auto' ,height:'100%'}}>
-   <Box sx={{  perspective:'604px',
-   perspectiveOrigin: '30% 50%',
-    bgcolor: "#fff",display:'flex', alignItems:"end", }}>
+   <Box sx={{  perspective:{xs:'0',md:'604px'},
+   perspectiveOrigin: {md:'30% 50%',xs:'0% 0%'},
+   position:'relative',
+    top:'45%',
+    bgcolor: "#fff",display:'flex', alignItems:"end"}}>
       
-        <Box sx={{mx:'auto', transform:` skewX(165deg) rotateX(15deg)`,bgcolor:"#3cb8bb", width:'100%',maxWidth:'811px', height:{xs:300,md:'320px'},borderRadius:6,}}>
+        <Box sx={{mx:'auto', transform:{xs:` skewX(0deg) rotateX(0deg)`,md:` skewX(165deg) rotateX(15deg)`},bgcolor:"#3cb8bb", width:'100%',maxWidth:'811px', height:{xs:300,md:'320px'},borderRadius:6,}}>
      
         </Box>
         <Box
@@ -50,7 +52,7 @@ function Section6(): React.JSX.Element {
           }}
         />
       
-        <Card raised sx={{borderRadius:4, width:'100%', maxWidth:'350px', position:'absolute',left:'16%', bottom:34}}>
+        <Card raised sx={{borderRadius:4, width:'100%', maxWidth:'350px', position:'absolute',transform:{md:'translateX(50%)',xs:'translateX(0%)'}, bottom:60}}>
           <form>
 
           <CardContent sx={{direction:'rtl'}}>
