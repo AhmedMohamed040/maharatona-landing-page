@@ -13,8 +13,6 @@ import {
 } from "@mui/material";
 import React from "react";
 import Section1 from "./section1";
-import Slider from "../../components/shared/slider/index";
-import Grid from "@mui/material/Unstable_Grid2";
 import Section2 from "./section2";
 import Section3 from "./section3";
 import Section4 from "./section4";

@@ -28,7 +28,7 @@
       "design":"Interactive and engaging design"
     },
     "Section3":{
-      "mainText":"With our skills, learning becomes closer",
+      "mainText":"With Maharatona, learning becomes closer",
       "subText":"At Maharatona, we seek to connect you with inspiring educational centers that develop your child, and we provide you with a platform to evaluate the centers to develop them and motivate them to be creative and communicate easier. We always seek to find interesting courses in various fields: art, sports, self-development, and others.",
       "subText1":"With Maharatona, you will find that developing your child's skills is easier and more enjoyable..."
     },
@@ -49,12 +49,12 @@
       "download":"Download the app now"
     },
     "Section5":{
-      "title":"الاسئله الشائعه",
+      "title":"FQA",
       "question1":"What are Maharatona?",
       "question2":"Who are the course providers?",
       "question3":"How to pay for a course?",
       "question4":"What is the course cancellation policy?",
-      "question5":"Do you share our skills in interacting with parents and centers?",
+      "question5":"Do you share Maharatona in interacting with parents and centers?",
       "answer1":"Maharatona is a Saudi platform that cooperates with children’s centers and clubs to create a single destination for parents to search for and register their children in educational or sports courses and programs to create a diligent and educated generation.",
       "answer2":"The courses on the app are provided by children's centers and clubs, and we do not place any restrictions on the courses.",
       "answer3": "Your payment information is processed by a third party vendor, and you will be redirected to a secure site to complete your payment. The privacy statement posted on the landing page of the site operated by the relevant third party vendor sets out how your payment details are provided and processed. Please review these terms before proceeding with any such transaction.",
@@ -64,6 +64,57 @@
       "answer5":"We bring together course providers and parents and are not involved in any communication or other interactions."
 
 
+    },
+    "partner":{
+      "section1":{
+        "mainText":"Start your journey to success Maharatona!",
+        "subText":"Join us to boost your business with easier access to new customers and increase your sales."
+      },
+      "section2":{
+        "mainText":"What does it mean to be a partner with us?",
+        "subText1":"More clients",
+        "subText2":"Earn more money",
+        "subText3":"Develop your business"
+      },
+      "section3":{
+        "mainText":"We work together for our children"
+      
+      },
+      "section4":{
+        "mainText":"How will we work together?",
+        "subText1":"The child registers for a course and pays directly.",
+        "subText2":"The child attends the course at your center.",
+        "subText3":"Watch your project grow and flourish"
+
+      },
+      "section5":{
+        "mainText":"Applying Maharatona to ",
+        "mainText2":"the centers",
+        "subText1":"Register and create an account",
+        "subText2":"Add and manage courses",
+        "subText3":"Track your earnings",
+        "subText4":"Interact with registrants"
+
+      },
+      "section6":{
+        "title":"FQA",
+        "question1":"Why join Maharatona?",
+        "answer1":"Maharatona help centers and clubs increase enrollment, reach new customers and increase brand awareness through your partnership with us, as we enable you to reach thousands of new customers who want to enroll their children in centers like yours. We help you enroll them.",
+        "question2":"How do I become a partner with Maharatona?",
+        "answer2":"To become a partner with Maharatona, please download the “Markaz” application and you will have to continue completing the registration through the application and submit legally valid documents to ensure that your partnership transaction is completed quickly and easily.",
+        "question3":"What documents do I need to become a partner with Maharatona?",
+        "answer3":"We will ask you to provide a copy of the following documents so that we can verify the authenticity of the documents on our part:",
+        "answer3-1":"Valid commercial register",
+        "answer3-2":"IBAN Bank Certificate",
+        "question4":"Are Maharatona available in my area?",
+        "answer4":"You can easily check if Maharatona service is available in your area when you start the registration process. If the service is not available in your area, please contact us and we will keep your information to contact you once our services are available in your area.",
+        "question5":"Why do our skills charge a commission?",
+        "answer5":"Commission fees are charged to cover operating costs, service improvements, marketing costs and manpower such as customer service.",
+        "question6":"What is the method of receivables?",
+        "answer6":"Your first payment will be after 45 days from the date of activating your account on the platform, and after that you will receive your payments from Maharatna at the end of each month."
+
+
+      }
     },
     "Footer":{
       "Copyright":"(All rights reserved to Maharatona 2024)"

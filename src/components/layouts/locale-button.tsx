@@ -23,7 +23,7 @@ export default function LocaleButton() {
         bg: "#919EAB",
       }}
     >
-      {currentLocale}
+      {currentLocale === 'ar' ? 'en' : 'ar'}
     </Button>
   );
 }
