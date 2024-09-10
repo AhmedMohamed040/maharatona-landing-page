@@ -94,6 +94,16 @@ const modifiedTheme = {
       dark: "#1D5691",
       darkest: "#1D5691"
     },
+    warning: {
+     
+        ...theme.palette.warning,
+        lightest: "#FEEFD1",
+        light: "#FCCF76",
+        main: '#faaf1b',
+        dark: "#E39F19",
+        darkest: "#CE9117"
+      
+    }
   },
   breakpoints: {
     ...theme.breakpoints,

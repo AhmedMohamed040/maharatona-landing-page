@@ -7,6 +7,7 @@ import { createTheme, ThemeProvider, useTheme } from "@mui/material/styles";
 import { Button, InputAdornment, MenuItem, useMediaQuery } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import {useTranslations} from 'next-intl';
+import { usePathname } from 'next/navigation'
 import React, { useEffect, useMemo, useState } from "react";
 import {
   Box,
@@ -97,12 +98,14 @@ const user = {
 };
 export default function Header(props: Props) {
   const t = useTranslations();
+  const pathname = usePathname();
   const { window } = props;
   const [menuOpen, setMenuOpen] = React.useState(false);
   const route = useRouter();
   const handleDrawerToggle = () => {
     setMenuOpen((prevState) => !prevState);
   };
+  
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.down("md"));
   const popover = usePopover();
@@ -367,7 +370,7 @@ export default function Header(props: Props) {
       <AppBar
         component="nav"
         sx={{
-          bgcolor: "#EBF8F8",
+          bgcolor: pathname === '/ar/partner' || pathname === '/en/partner'? '#feefd1':"#EBF8F8",
           boxShadow: "none",
          py:{xs:0.5,md:2},px:{xs:1,md:4},
         }}
