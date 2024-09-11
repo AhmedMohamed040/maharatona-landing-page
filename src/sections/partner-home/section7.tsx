@@ -23,10 +23,11 @@ import { useTranslations } from "next-intl";
 
 import Grid from "@mui/material/Unstable_Grid2";
 import Iconify from "@/components/iconify";
+import { useLocale } from "next-intl";
 
 function Section7(): React.JSX.Element {
   const t = useTranslations();
-
+  const currentLang = useLocale();
   return (
     <Box  sx={{direction:'ltr',my:4, height:600}}>
 
@@ -53,9 +54,9 @@ function Section7(): React.JSX.Element {
         />
       
         <Card raised sx={{borderRadius:4, width:'100%', maxWidth:'350px', position:'absolute',transform:{md:'translateX(50%)',xs:'translateX(0%)'}, bottom:60}}>
-          <form>
+          <form style={{direction:currentLang==='ar'?'rtl':'ltr'}}>
 
-          <CardContent sx={{direction:'rtl'}}>
+          <CardContent >
             <Stack sx={{my:2}}>
 
           <TextField 

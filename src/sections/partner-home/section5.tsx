@@ -13,12 +13,13 @@ import {
 } from "@mui/material";
 import React from "react";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
 import Grid from "@mui/material/Unstable_Grid2";
 
 function Section5(): React.JSX.Element {
   const t = useTranslations();
-
+  const currentLang = useLocale();
   return (
     <Box sx={{ my: 7 }}>
        <Container>
@@ -48,7 +49,7 @@ function Section5(): React.JSX.Element {
           }}
         >
 
-          <Grid container spacing={5} gap={5} sx={{ width: '100%' }} flexDirection="column" justifyContent="center" alignItems="center">
+          <Grid container spacing={5} gap={5} sx={{direction:currentLang === 'ar'?'rtl':'ltr', width: '100%' }} flexDirection="column" justifyContent="center" alignItems="center">
             <Grid xs={12} >
               <Typography
                 fontWeight="600"

@@ -192,9 +192,9 @@ export default function Header(props: Props) {
     popover.onClose();
     const targetElement = document.getElementById(targetId);
 
-    if (targetElement) {
+    
     route.push(path);
-    }
+    
   };
 
   const container =
@@ -316,3 +316,4 @@ export default function Header(props: Props) {
     </Box>
   );
 }
+/* "&.MuiMenuItem-root:hover":{bgcolor:'transparent' */
