@@ -13,14 +13,15 @@ import {
 } from "@mui/material";
 import React from "react";
 import { useTranslations } from 'next-intl';
+import { useLocale } from "next-intl";
 
 import Grid from "@mui/material/Unstable_Grid2";
 
 function Section4(): React.JSX.Element {
     const t = useTranslations();
-
+    const currentLang = useLocale();
     return (
-        <Box sx={{my:7, minHeight: 300 }}>
+        <Box sx={{direction:currentLang === 'ar'? 'rtl':'ltr',my:7, minHeight: 300 }}>
          
             <Grid container spacing={2} sx={{ alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
                 <Grid xs={12} display="flex" sx={{ justifyContent: 'center' }}>

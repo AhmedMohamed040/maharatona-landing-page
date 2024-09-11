@@ -19,6 +19,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 
 function Section4(): React.JSX.Element {
   const t = useTranslations();
+
   const downSide: Variants = {
     offscreen: {
       y: -100,
@@ -72,7 +73,6 @@ function Section4(): React.JSX.Element {
   };
   return (
     <Box sx={{ my: 7 }}>
-      <Container>
         <Grid container spacing={4}>
           <Grid xs={12} md={6} sx={{ display: "flex", alginItems: "center" }}>
             <motion.div
@@ -107,8 +107,8 @@ function Section4(): React.JSX.Element {
               justifyContent: 'center',
             }}
           >
-
-            <Grid container spacing={5} gap={5} sx={{ width: '100%' }} flexDirection="column" justifyContent="center" alignItems="center">
+            
+            <Grid container spacing={5} gap={5} sx={{mr:{md:7,xs:0},width: '100%' }} flexDirection="column" justifyContent="center" alignItems="center">
               <Grid xs={12}>
                 <Typography
                   fontWeight="600"
@@ -249,7 +249,6 @@ function Section4(): React.JSX.Element {
           </Grid>
         </Grid>
 
-      </Container>
 
     </Box>
   );

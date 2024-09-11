@@ -19,12 +19,13 @@ import { useTranslations } from "next-intl";
 
 import Grid from "@mui/material/Unstable_Grid2";
 import Iconify from "@/components/iconify";
+import { useLocale } from "next-intl";
 
 function Section6(): React.JSX.Element {
   const t = useTranslations();
-
+  const currentLang = useLocale();
   return (
-    <Box id="FQA" sx={{ minHeight: 400, bgcolor: "#ebf8f8" }}>
+    <Box id="FQA" sx={{direction: currentLang==='ar'?'rtl':'ltr', minHeight: 400, bgcolor: "#ebf8f8" }}>
    
       <Grid
         container
@@ -59,7 +60,7 @@ function Section6(): React.JSX.Element {
                 display: "flex",
               }}
             >
-              <Accordion   sx={{p:{md:2,xs:1},textAlign:"right", '&.MuiAccordion-root':{borderRadius:2},direction:'rtl'}}>
+              <Accordion   sx={{p:{md:2,xs:1},textAlign:currentLang==='ar'?'right':'left', '&.MuiAccordion-root':{borderRadius:2},}}>
                 <AccordionSummary
                
                   expandIcon={<Iconify color="#c434d5" icon="ph:caret-down-bold" />}
@@ -77,7 +78,7 @@ function Section6(): React.JSX.Element {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion   sx={{p:{md:2,xs:1},textAlign:"right",  '&.MuiAccordion-root':{borderRadius:2},direction:'rtl'}}>
+              <Accordion   sx={{p:{md:2,xs:1},textAlign:currentLang==='ar'?'right':'left',  '&.MuiAccordion-root':{borderRadius:2},}}>
                 <AccordionSummary
                  
                   expandIcon={<Iconify color="#c434d5" icon="ph:caret-down-bold" />}
@@ -95,7 +96,7 @@ function Section6(): React.JSX.Element {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion   sx={{p:{md:2,xs:1}, textAlign:"right", '&.MuiAccordion-root':{borderRadius:2},direction:'rtl'}}>
+              <Accordion   sx={{p:{md:2,xs:1}, textAlign:currentLang==='ar'?'right':'left', '&.MuiAccordion-root':{borderRadius:2},}}>
                 <AccordionSummary
                  
                   expandIcon={<Iconify color="#c434d5" icon="ph:caret-down-bold" />}
@@ -123,7 +124,7 @@ function Section6(): React.JSX.Element {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion   sx={{ p:{md:2,xs:1},textAlign:"right", '&.MuiAccordion-root':{borderRadius:2},direction:'rtl'}}>
+              <Accordion   sx={{ p:{md:2,xs:1},textAlign:currentLang==='ar'?'right':'left', '&.MuiAccordion-root':{borderRadius:2},}}>
                 <AccordionSummary
                  
                   expandIcon={<Iconify color="#c434d5" icon="ph:caret-down-bold" />}
@@ -141,7 +142,7 @@ function Section6(): React.JSX.Element {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion   sx={{p:{md:2,xs:1}, textAlign:"right", '&.MuiAccordion-root':{borderRadius:2},direction:'rtl'}}>
+              <Accordion   sx={{p:{md:2,xs:1}, textAlign:currentLang==='ar'?'right':'left', '&.MuiAccordion-root':{borderRadius:2},}}>
                 <AccordionSummary
                  
                   expandIcon={<Iconify color="#c434d5" icon="ph:caret-down-bold" />}
@@ -159,7 +160,7 @@ function Section6(): React.JSX.Element {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
-              <Accordion   sx={{p:{md:2,xs:1}, textAlign:"right", '&.MuiAccordion-root':{borderRadius:2},direction:'rtl'}}>
+              <Accordion   sx={{p:{md:2,xs:1}, textAlign:currentLang==='ar'?'right':'left', '&.MuiAccordion-root':{borderRadius:2},}}>
                 <AccordionSummary
                  
                   expandIcon={<Iconify color="#c434d5" icon="ph:caret-down-bold" />}

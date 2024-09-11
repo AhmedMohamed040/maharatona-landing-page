@@ -13,12 +13,13 @@ import {
 } from "@mui/material";
 import React from "react";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
 import Grid from "@mui/material/Unstable_Grid2";
 
 function Section3(): React.JSX.Element {
   const t = useTranslations();
-
+  const currentLang =useLocale()
   return (
     <Box sx={{ pt: 2, pb: 4, minHeight: 400 }}>
       <Box sx={{ position: "relative", width: "100%" }}>
@@ -95,6 +96,7 @@ function Section3(): React.JSX.Element {
             sx={{
               unicodeBidi: "embed",
             ml:8,
+            direction:currentLang === 'ar'?'rtl':'ltr',
               textAlign:"center",
               mt: 2,
              

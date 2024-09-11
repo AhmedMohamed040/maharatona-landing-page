@@ -14,10 +14,12 @@ import {
 import React from "react";
 import { useTranslations } from 'next-intl';
 import Grid from "@mui/material/Unstable_Grid2";
+
 import { motion, Variants } from "framer-motion";
 
 function Section1(): React.JSX.Element {
   const t = useTranslations();
+
   const cardVariants: Variants = {
     offscreen: {
       y: 100,

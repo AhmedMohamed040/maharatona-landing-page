@@ -14,11 +14,13 @@ import {
 import React from "react";
 import { useTranslations } from "next-intl";
 import { motion, Variants } from "framer-motion";
+import { useLocale } from "next-intl";
 
 import Grid from "@mui/material/Unstable_Grid2";
 
 function Section3(): React.JSX.Element {
   const t = useTranslations();
+  const currentLang = useLocale();
   const leftSide: Variants = {
     offscreen: {
       x: -200,
@@ -121,7 +123,7 @@ function Section3(): React.JSX.Element {
             color="primary.dark"
             sx={{
               unicodeBidi: "embed",
-              direction: "rtl",
+              direction: currentLang === 'ar'? "rtl":"ltr" ,
               display: "inline",
               mt: 2,
               textOverflow: "nowrap",
@@ -161,12 +163,12 @@ function Section3(): React.JSX.Element {
                 color="primary.dark"
                 sx={{
                   unicodeBidi: "embed",
-                  direction: "rtl",
+                  direction: currentLang === 'ar'? "rtl":"ltr" ,
                   mt: 2,
                   textOverflow: "wrap",
                   fontSize: { md: "18px", xs: "16px" },
                   lineHeight: 2,
-                  textAlign: "right",
+                  
                 }}
               >
                 {t("Global.Section3.subText")}
