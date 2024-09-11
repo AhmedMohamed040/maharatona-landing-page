@@ -75,7 +75,7 @@ const Items = [
   
   {
     label: "Home",
-    href:"/"
+    href:"#home"
   },
 ];
 
@@ -188,8 +188,13 @@ export default function Header(props: Props) {
   }, [pageYOffset]);
 
   const handleClickItem = (path: string) => {
+    const targetId = path.replace(/#/, '');
     popover.onClose();
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
     route.push(path);
+    }
   };
 
   const container =

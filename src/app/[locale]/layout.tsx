@@ -17,12 +17,12 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} style={{scrollBehavior:'smooth'}}>
       <body  >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider theme={theme}>
             <Header />
-            <main style={{scrollBehavior:'smooth', minHeight: 300, marginTop: "120px" }}>
+            <main style={{ minHeight: 300, marginTop: "120px" }}>
               {children}
             </main>
             <Footer />

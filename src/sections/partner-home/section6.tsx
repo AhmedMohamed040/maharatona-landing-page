@@ -24,7 +24,7 @@ function Section6(): React.JSX.Element {
   const t = useTranslations();
 
   return (
-    <Box sx={{ minHeight: 400, bgcolor: "#ebf8f8" }}>
+    <Box id="FQA" sx={{ minHeight: 400, bgcolor: "#ebf8f8" }}>
    
       <Grid
         container
@@ -40,6 +40,7 @@ function Section6(): React.JSX.Element {
           <Typography
             fontWeight="600"
             component="div"
+            id="FQA"
             variant="body1"
             sx={{ fontSize: { md: "40px", xs: "24px" }, mt: 14 }}
             color="primary.dark"

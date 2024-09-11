@@ -58,7 +58,7 @@ function Section1(): React.JSX.Element {
     <Box sx={{ my: 10 }}>
 
       <Container >
-        <Grid container spacing={0} justifyContent={{ md: 'space-between', xs: 'center' }}>
+        <Grid id="home" container spacing={0} justifyContent={{ md: 'space-between', xs: 'center' }}>
           <Grid xs={12} md={6} sx={{ mt: { xs: 4, md: 10 } }}>
           <motion.div
               className="card-container"
