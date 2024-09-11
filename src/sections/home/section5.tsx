@@ -16,6 +16,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import { useTranslations } from "next-intl";
+import { motion, Variants } from "framer-motion";
 
 import Grid from "@mui/material/Unstable_Grid2";
 import Iconify from "@/components/iconify";
@@ -23,9 +24,26 @@ import Iconify from "@/components/iconify";
 function Section5(): React.JSX.Element {
   const t = useTranslations();
 
+  const upSide: Variants = {
+    offscreen: {
+      y: 100,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+
+      transition: {
+        type: "spring",
+        bounce: 0.5,
+        duration: 1,
+        delay: 0.5
+      }
+    }
+  };
   return (
     <Box sx={{ minHeight: 400, bgcolor: "#e6dbec" }}>
-      <Box sx={{ position: "relative", width: "100%" }}>
+      <Box id="#FQA" sx={{ position: "relative", width: "100%" }}>
         <Box
           component="img"
           src="/assets/images/section5/topClouds.svg"
@@ -69,6 +87,13 @@ function Section5(): React.JSX.Element {
                 display: "flex",
               }}
             >
+                 <motion.div
+              className="card-container"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: false, amount: 0.2 }}
+            >
+              <motion.div variants={upSide}>
               <Accordion   sx={{p:{md:2,xs:1},textAlign:"right", '&.MuiAccordion-root':{borderRadius:2},direction:'rtl'}}>
                 <AccordionSummary
                
@@ -87,6 +112,15 @@ function Section5(): React.JSX.Element {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
+              </motion.div>
+            </motion.div>
+            <motion.div
+              className="card-container"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: false, amount: 0.2 }}
+            >
+              <motion.div variants={upSide}>
               <Accordion   sx={{p:{md:2,xs:1},textAlign:"right",  '&.MuiAccordion-root':{borderRadius:2},direction:'rtl'}}>
                 <AccordionSummary
                  
@@ -105,6 +139,15 @@ function Section5(): React.JSX.Element {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
+              </motion.div>
+            </motion.div>
+            <motion.div
+              className="card-container"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: false, amount: 0.2 }}
+            >
+              <motion.div variants={upSide}>
               <Accordion   sx={{p:{md:2,xs:1}, textAlign:"right", '&.MuiAccordion-root':{borderRadius:2},direction:'rtl'}}>
                 <AccordionSummary
                  
@@ -126,6 +169,16 @@ function Section5(): React.JSX.Element {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
+              </motion.div>
+            </motion.div>
+            <motion.div
+              className="card-container"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: false, amount: 0.2 }}
+            >
+              <motion.div variants={upSide}>
+               
               <Accordion   sx={{ p:{md:2,xs:1},textAlign:"right", '&.MuiAccordion-root':{borderRadius:2},direction:'rtl'}}>
                 <AccordionSummary
                  
@@ -144,6 +197,16 @@ function Section5(): React.JSX.Element {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
+              </motion.div>
+            </motion.div>
+            <motion.div
+              className="card-container"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: false, amount: 0.2 }}
+            >
+              <motion.div variants={upSide}>
+               
               <Accordion   sx={{p:{md:2,xs:1}, textAlign:"right", '&.MuiAccordion-root':{borderRadius:2},direction:'rtl'}}>
                 <AccordionSummary
                  
@@ -162,6 +225,11 @@ function Section5(): React.JSX.Element {
                   </Typography>
                 </AccordionDetails>
               </Accordion>
+              </motion.div>
+            </motion.div>
+            
+            
+             
             </Box>
           </Container>
         </Grid>

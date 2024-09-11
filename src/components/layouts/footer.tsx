@@ -39,26 +39,21 @@ export default function Footer(props: Props) {
 
   return (
     <Box sx={{position:'relative',mt:'auto',  bottom: 0, width:'100%' ,hieght:100}}>
-
       <Box >
-
           <Grid sx={{ px: 6 }} justifyContent="space-between" container alignItems="center" spacing={3}>
             <Grid xs={12} md={4} sx={{ display: "flex", justifyContent: { md: 'flex-start', xs: 'center' } }}>
               <Box sx={{ gap: 1, display: 'flex', alignItems: 'center', justifyContent: { xs: 'center', md: "flex-end" } }}>
-
-                <IconButton href="#" sx={{ boxShadow: 1 }} >
+                <IconButton href="https://x.com/maharatona?s=11&t=xmHeRti1I9OFbL6s-GymfA" sx={{ boxShadow: 1 }} >
                   <Iconify color="primary.dark" icon="mdi:twitter" />
                 </IconButton>
-                <IconButton href="#" sx={{ boxShadow: 1 }}>
+                <IconButton href="https://www.instagram.com/maharatona?igsh=ZzFhMWE5ZDN3aG8z" sx={{ boxShadow: 1 }}>
                   <Iconify color="primary.dark" icon="basil:instagram-outline" />
                 </IconButton>
-                <IconButton href="#" sx={{ boxShadow: 1 }}>
-                  <Iconify color="primary.dark" icon="gg:facebook" />
+                <IconButton href="https://snapchat.com/t/REoOjd5p" sx={{ boxShadow: 1 }}>
+                  <Iconify color="primary.dark" icon="jam:snapchat" />
                 </IconButton>
               </Box>
             </Grid>
-
-
             <Grid xs={12} md={4} sx={{ display: "flex", justifyContent:   'center'  }}>
               <Typography variant="body2" color="primary.dark" fontWeight="600">
                {t('Global.Footer.Copyright')}
