@@ -43,7 +43,7 @@ function Section5(): React.JSX.Element {
   };
   return (
     <Box sx={{ minHeight: 400, bgcolor: "#e6dbec" }}>
-      <Box id="#FQA" sx={{ position: "relative", width: "100%" }}>
+      <Box id="FQA" sx={{ position: "relative", width: "100%" }}>
         <Box
           component="img"
           src="/assets/images/section5/topClouds.svg"

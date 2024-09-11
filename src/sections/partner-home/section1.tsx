@@ -24,7 +24,7 @@ function Section1(): React.JSX.Element {
     <Box sx={{mt:10}}>
 
       <Container >
-        <Grid container spacing={0} justifyContent={{md:'space-between',xs:'center'}}>
+        <Grid id="home" container spacing={0} justifyContent={{md:'space-between',xs:'center'}}>
           <Grid xs={12} sx={{display:'flex',alignItems:'center', justifyContent:'center',position:'relative', mt:{xs:4,md:0}}}>
 
         
