@@ -30,7 +30,7 @@ function Section6(): React.JSX.Element {
   return (
     <Box sx={{my:4, height:600}}>
 
-    <Box sx={{minHeight:200, pt:7 , mt:'auto' ,height:'100%'}}>
+    <Box id="#Contact_Us" sx={{minHeight:200, pt:7 , mt:'auto' ,height:'100%'}}>
    <Box sx={{  perspective:{xs:'0',md:'604px'},
    perspectiveOrigin: {md:'30% 50%',xs:'0% 0%'},
    position:'relative',
