@@ -41,9 +41,11 @@ function Section3(): React.JSX.Element {
             alt="green iguana"
             sx={{
               disply: { md: "block", xs: "none" },
-              height: '100%',
-              maxWidth: {md:110, xs:130},
+              height: 'auto',
+              maxWidth: {md:110, xs:75},
               mt: "auto",
+              overflow:'hidden',
+              right:0,
               zIndex:{md:0, xs:0},
               position:{md:'relative', xs:'absolute'},
               ml:2,

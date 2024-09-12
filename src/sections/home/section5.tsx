@@ -167,7 +167,7 @@ function Section5(): React.JSX.Element {
                 <br />
                 <br />
 
-                  {t("Global.Section5.answer3-2")} <strong style={{color:'#eab3d4'}}>  {t("Global.Section5.answer3-3")}</strong>.
+                  {t("Global.Section5.answer3-2")}   {t("Global.Section5.answer3-3")}.
                   </Typography>
                 </AccordionDetails>
               </Accordion>

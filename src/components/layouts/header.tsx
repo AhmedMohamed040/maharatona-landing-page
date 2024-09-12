@@ -277,12 +277,14 @@ export default function Header(props: Props) {
   );
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box  sx={{ display:'flex'}}>
       <AppBar
+      style={{display:'flex'}}
         component="nav"
         sx={{
           bgcolor: pathname === '/ar/partner' || pathname === '/en/partner'? '#feefd1':"#EBF8F8",
           boxShadow: "none",
+        position:'inherit',
          py:{xs:0.5,md:2},px:{xs:1,md:4},
         }}
       >
@@ -298,6 +300,7 @@ export default function Header(props: Props) {
           <Button  sx={{
             fontWeight:'600',
             mx:0.5,
+            display:{xs:'none', md:'inline'},
             fontSize:{xs:12,md:15},
             borderRadius:4,border:2, '&:hover':{border:2},
             color:(theme)=>theme.palette.primary.dark, 

@@ -3,6 +3,13 @@ import "./globals.css";
 
 
 
+export const viewport = {
+  themeColor: '#000000',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "Maharatona",
   description: "Maharatona",
