@@ -22,7 +22,7 @@ function Section5(): React.JSX.Element {
   const currentLang = useLocale();
   return (
     <Box sx={{ my: 7 }}>
-       <Container>
+      
       <Grid container spacing={4}>
         <Grid xs={12} md={6} sx={{ display: "flex", alginItems: "center" }}>
           <CardMedia
@@ -30,10 +30,11 @@ function Section5(): React.JSX.Element {
             alt="green iguana"
             sx={{
               objectFit: "contain",
-              mx: { xs: "auto", md: 0 },
-              height: "auto",
-              width: "100%",
-              maxWidth: 500,
+                    mx: { xs: "auto", md: 0, lg:0, xl:0 },
+                    height: "auto",
+                    width: "100%",
+                    right:0,
+                    maxWidth: 500,
               filter: "drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5))"
             }}
             image={"/assets/images/partner/section5/Mobile-App.png"}
@@ -49,7 +50,7 @@ function Section5(): React.JSX.Element {
           }}
         >
 
-          <Grid container spacing={5} gap={5} sx={{direction:currentLang === 'ar'?'rtl':'ltr', width: '100%' }} flexDirection="column" justifyContent="center" alignItems="center">
+          <Grid container spacing={5} gap={5} sx={{ml:{md:7,xs:0},direction:currentLang === 'ar'?'rtl':'ltr', width: '100%' }} flexDirection="column" justifyContent="center" alignItems="center">
             <Grid xs={12} >
               <Typography
                 fontWeight="600"
@@ -170,8 +171,7 @@ function Section5(): React.JSX.Element {
           </Grid>
         </Grid>
       </Grid>
-     
-      </Container>
+    
 
     </Box>
   );
