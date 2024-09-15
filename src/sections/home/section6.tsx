@@ -15,14 +15,13 @@ import {
   Container,
   FormControlLabel,
   MenuItem,
-  Select,
   Stack,
   TextField,
   Typography,
 } from "@mui/material";
 import React from "react";
 import { useTranslations } from "next-intl";
-
+import Select from '@mui/material/Select';
 import Grid from "@mui/material/Unstable_Grid2";
 import Iconify from "@/components/iconify";
 import { useLocale } from "next-intl";
@@ -80,8 +79,7 @@ function Section6(): React.JSX.Element {
 
                
                 <Select
-                   
-                   label={'title'}
+                 defaultValue={"option1"}
                  >
                     <MenuItem sx={{direction:currentLang === 'ar' ? 'rtl' : 'ltr'}} value={'option1'}>{t('Global.Section6.option1')}</MenuItem>
                     

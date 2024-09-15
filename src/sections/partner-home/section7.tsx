@@ -77,14 +77,13 @@ function Section7(): React.JSX.Element {
                 </Stack>
                 <Stack sx={{ my: 2 }}>
 
-                  <Select
-                   
-                    label={'title'}
-                  >
-                     <MenuItem sx={{direction:currentLang === 'ar' ? 'rtl' : 'ltr'}} value={'option1'}>{t('Global.Section6.option1')}</MenuItem>
-                     
-                     <MenuItem sx={{direction:currentLang === 'ar' ? 'rtl' : 'ltr'}} value={'option2'}>{t('Global.Section6.option2')}</MenuItem>
-                  </Select>
+                <Select
+                 defaultValue={"option1"}
+                 >
+                    <MenuItem sx={{direction:currentLang === 'ar' ? 'rtl' : 'ltr'}} value={'option1'}>{t('Global.Section6.option1')}</MenuItem>
+                    
+                    <MenuItem sx={{direction:currentLang === 'ar' ? 'rtl' : 'ltr'}} value={'option2'}>{t('Global.Section6.option2')}</MenuItem>
+                 </Select>
                 </Stack>
                 <Stack sx={{ mt: 2 }}>
 
