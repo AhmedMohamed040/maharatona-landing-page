@@ -13,7 +13,6 @@ import {
 } from "@mui/material";
 import React from "react";
 import { useTranslations } from "next-intl";
-import { motion, Variants } from "framer-motion";
 import { useLocale } from "next-intl";
 
 import Grid from "@mui/material/Unstable_Grid2";
@@ -21,42 +20,9 @@ import Grid from "@mui/material/Unstable_Grid2";
 function Section3(): React.JSX.Element {
   const t = useTranslations();
   const currentLang = useLocale();
-  const leftSide: Variants = {
-    offscreen: {
-      x: -200,
-      opacity: 0,
-    },
-    onscreen: {
-      x: 0,
-      opacity: 1,
-
-      transition: {
-        type: "spring",
-        bounce: 0.5,
-        duration: 2,
-        delay: 0,
-      },
-    },
-  };
-  const rightSide: Variants = {
-    offscreen: {
-      x: 200,
-      opacity: 0,
-    },
-    onscreen: {
-      x: 0,
-      opacity: 1,
-
-      transition: {
-        type: "spring",
-        bounce: 0.5,
-        duration: 2,
-        delay: 0,
-      },
-    },
-  };
+  
   return (
-    <Box sx={{ my: 7 }}>
+    <Box sx={{ my:{xs:2, lg:7} }}>
       <Grid container spacing={1}>
         <Grid xs={12} md={7} sx={{ display: "flex", alginItems: "center" }}>
           <CardMedia
@@ -143,13 +109,7 @@ function Section3(): React.JSX.Element {
             </span>
           </Typography>
           <br />
-          <motion.div
-            className="card-container"
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: false, amount: 0.2 }}
-          >
-            <motion.div variants={rightSide}>
+      
               <Typography
                 fontWeight="400"
                 variant="h4"
@@ -169,8 +129,7 @@ function Section3(): React.JSX.Element {
                 <br />
                 {t("Global.Section3.subText1")}
               </Typography>
-            </motion.div>
-          </motion.div>
+           
         </Grid>
       </Grid>
     </Box>

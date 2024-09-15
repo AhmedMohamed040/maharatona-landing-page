@@ -202,6 +202,7 @@ export default function Header(props: Props) {
 onClick={() => handleClickItem('#download')}
 sx={{
   fontWeight:'600',
+  my:1,
   mx:0.5,
   display:{ md:'inline'},
   fontSize:{xs:12,md:15},
@@ -325,9 +326,8 @@ sx={{
   );
 
   return (
-    <Box  sx={{ display:'flex'}}>
+    <Box >
       <AppBar
-      style={{display:'flex'}}
         component="nav"
         sx={{
           bgcolor: pathname === '/ar/partner' || pathname === '/en/partner'? '#feefd1':"#EBF8F8",

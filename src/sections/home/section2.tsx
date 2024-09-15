@@ -20,7 +20,7 @@ function Section2(): React.JSX.Element {
   const t = useTranslations();
  
   return (
-    <Box sx={{ pt: 10, pb: 10, minHeight: 300 }}>
+    <Box sx={{ pt: {xs:3,lg:10}, pb:  {xs:3,lg:10}, minHeight: 300 }}>
       <Box sx={{ position: "relative", width: "100%" }}>
         <Box
           component="img"
