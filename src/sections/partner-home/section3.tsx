@@ -97,11 +97,13 @@ function Section3(): React.JSX.Element {
             color="primary.dark"
             sx={{
               unicodeBidi: "embed",
-            ml:8,
+            ml:{xs:0,md:8},
             direction:currentLang === 'ar'?'rtl':'ltr',
               textAlign:"center",
               mt: 2,
-             
+             position:'relative',
+             zIndex:4,
+             top:{xs:-30,md:0},
               fontSize: { md: "60px", xs: "24px" },
               lineHeight: 2,
             }}

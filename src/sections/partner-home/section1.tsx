@@ -22,16 +22,16 @@ function Section1(): React.JSX.Element {
   const currentLang = useLocale();
   return (
 
-    <Box id="home" sx={{mt:10}}>
+    <Box id="home" sx={{mt:{md:10, xs:0}}}>
 
-      <Container >
+      <Container sx={{mr:0}}>
         <Grid  container spacing={0} justifyContent={{md:'space-between',xs:'center'}}>
-          <Grid xs={12} sx={{direction:currentLang === 'ar'?'rtl':'ltr' ,display:'flex',alignItems:'center', justifyContent:'center',position:'relative', mt:{xs:4,md:0}}}>
+          <Grid xs={12} sx={{direction:currentLang === 'ar'?'rtl':'ltr' ,display:'flex',alignItems:'center', justifyContent:'center',position:'relative', mt:{xs:2,md:0}}}>
               <Box sx={{left:'50%',rigth:0,top:'50%', transform:'translate(-50%, -50%)',position:'absolute'}}>
-              <Typography fontWeight="600" variant="h4" color="primary.dark" sx={{textAlign:'center', color:'#fff',fontSize: { md: '34px', xs:'21px' }, lineHeight: 1.7}}>
+              <Typography fontWeight="600" variant="h4" color="primary.dark" sx={{textAlign:'center', color:'#fff',fontSize: { md: '34px', xs:'19px' }, lineHeight: 1.7}}>
               {t("Global.partner.section1.mainText")}
                 </Typography>
-                <Typography fontWeight="600" variant="h6" color="primary.dark" sx={{ textAlign:'center',color:'#fff', fontSize: { md: '24px',xs:'15px' }, lineHeight: 1.7}}>
+                <Typography fontWeight="600" variant="h6" color="primary.dark" sx={{ textAlign:'center',color:'#fff', fontSize: { md: '24px',xs:'13px' }, lineHeight: 1.7}}>
                 {t("Global.partner.section1.subText")}
                 </Typography>
               </Box>

@@ -56,7 +56,7 @@ function Section5(): React.JSX.Element {
                 fontWeight="600"
                 component="div"
                 variant="body1"
-                sx={{ fontSize: { md: "34px", xs: "24px" }, mt: 4 }}
+                sx={{textAlign:'center', fontSize: { md: "34px", xs: "24px" }, mt: 4 }}
                 color="primary.dark"
               >
                 {t("Global.partner.section5.mainText")}
@@ -67,7 +67,7 @@ function Section5(): React.JSX.Element {
                     component="img"
                     src={"/assets/images/partner/section5/underLine.svg"}
                     sx={{ width: "100%" }}
-                    height={{ md: 20, xs: 10 }}
+                    height={{md:"17px",xs:'12px'}}
                   />
                 </span>
               </Typography>
