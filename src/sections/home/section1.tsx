@@ -57,27 +57,27 @@ function Section1(): React.JSX.Element {
  
   return (
 
-    <Box sx={{ my: 10 }}>
+    <Box sx={{ my:2 }}>
 
       <Container >
         <Grid id="home" container spacing={0} justifyContent={{ md: 'space-between', xs: 'center' }}>
           <Grid xs={12} md={6} sx={{ mt: { xs: 0, md: 10 } }}>
-          <motion.div
+     {/*      <motion.div
               className="card-container"
               initial="offscreen"
               whileInView="onscreen"
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
             >
-              <motion.div variants={leftSide}>
+              <motion.div variants={leftSide}> */}
               <CardMedia
               component="img"
               alt="green iguana"
-              sx={{ mx: { xs: 'auto', md: 0 }, height: '100%', maxWidth: { md: 500, xs: 600 } }}
+              sx={{ mx: { xs: 'auto', lg: 0 }, height: '100%', maxWidth: { md: 500, xs: 600 } }}
               image={"/assets/images/section1/kids.png"}
             />
-                
+           {/*      
               </motion.div>
-            </motion.div>
+            </motion.div> */}
            
           </Grid>
           <Grid xs={12} md={6} display="flex" sx={{
@@ -88,7 +88,7 @@ function Section1(): React.JSX.Element {
             <Box sx={{ display: { md: 'block', xs: 'none' }, position: 'absolute', }}>
               <Box component="img" src="/assets/images/section1/background.svg" sx={{ zIndex: -1, height: "auto", width: 600, transform: 'translate(22%, 4%)', }} />
             </Box>
-            <Typography fontWeight="600" variant="h4" color="primary.dark" sx={{ fontSize: { md: '34px', xs: '24px' }, lineHeight: 1.7, textAlign: 'right' }}>
+            <Typography fontWeight="600" variant="h4" color="primary.dark" sx={{ fontSize: { md: '34px', xs: '24px' }, lineHeight: 1.7, textAlign: {xs: 'center',md:'right'} }}>
               {t('Global.Section1.mainText')} <span style={{ wordBreak: 'break-word', background: '#ebf8f8', borderRadius: 15 }}>{t('Global.Section1.subText')}</span>
               <br />
               <Box component={'span'} sx={{ fontSize: { md: '24px', xs: '17px' } }}>
@@ -119,7 +119,7 @@ function Section1(): React.JSX.Element {
               className="card-container"
               initial="offscreen"
               whileInView="onscreen"
-              viewport={{ once: false, amount: 1 }}
+              viewport={{ once: true, amount: 1 }}
             >
               <motion.div variants={cardVariants}>
 

@@ -142,7 +142,7 @@ function Section5(): React.JSX.Element {
                 </Typography>
               </Box>
             </Grid>
-            <Grid xs={12}>
+            <Grid id="download" xs={12}>
               <Typography
                 fontWeight="600"
                 component="div"

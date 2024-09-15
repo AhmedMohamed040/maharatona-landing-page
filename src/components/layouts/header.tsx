@@ -78,6 +78,32 @@ const Items = [
     href:"#home"
   },
 ];
+const ItemsSm = [
+  {
+    label: "Home",
+    href:"#home"
+  },
+  {
+    label: "FQA",
+    href:"#FQA"
+  },
+  {
+    label: "Contact Us",
+    href:"#Contact_Us"
+  },
+  {
+    label: "Join as a partner",
+    href:"/partner"
+  },
+ 
+  /* 
+  {
+    label: "Download",
+    href:"#download"
+  },
+  */
+ 
+];
 
 const user = {
   id: "8864c717-587d-472a-929a-8e5f298024da-0",
@@ -133,21 +159,23 @@ export default function Header(props: Props) {
         <Box
           component="img"
           alt="auth"
+          
           src={"/assets/logo/logo.svg"}
           sx={{
             my: 2,
             mx: "auto",
+           
             display: "block",
             width: { xs: 50, md: 85 },
-            height: { xs: 50, md: 70 },
+            height: { xs: 50, md: 85 },
           }}
         />
       </Link>
 
       <Divider />
       <List>
-        {Items.map((item) => (
-          <ListItem key={item.label} disablePadding>
+        {ItemsSm.map((item) => (
+          <ListItem sx={{display:'flex', flexDirection: "column"}} key={item.label} disablePadding>
             <ListItemButton
               sx={{
                 textAlign: "center",
@@ -165,9 +193,26 @@ export default function Header(props: Props) {
                  {t(`Global.Navbar.${item.label}`)}
               </Typography>
             </ListItemButton>
+       
           </ListItem>
         ))}
+         <Box>
+
+<Button 
+onClick={() => handleClickItem('#download')}
+sx={{
+  fontWeight:'600',
+  mx:0.5,
+  display:{ md:'inline'},
+  fontSize:{xs:12,md:15},
+  borderRadius:4,border:2, '&:hover':{border:2},
+  color:(theme)=>theme.palette.primary.dark, 
+  borderColor:(theme)=>theme.palette.primary.dark}} variant="outlined" >
+  {t('Global.Navbar.Download')}
+</Button>
+</Box>
       </List>
+      
     </Box>
   );
   const [pageYOffset, setPageYOffset] = useState(0);
@@ -203,7 +248,9 @@ export default function Header(props: Props) {
   const renderLinks = (
     <Box sx={{display:sm?'none':'flex', color: "#000" }}>
       {Items.map((item) => (
-        <MenuItem  sx={{ fontSize: {xs:12, md:17.5},color:'#1D5691', fontWeight:'600'}} key={item.label} onClick={() => handleClickItem(item.href)}>
+        <MenuItem  sx={{ fontSize: {xs:12, md:17.5},color:'#1D5691', fontWeight:'600'}} 
+        key={item.label} 
+        onClick={() => handleClickItem(item.href)}>
           {t(`Global.Navbar.${item.label}`)}
         </MenuItem>
       ))}
@@ -243,6 +290,7 @@ export default function Header(props: Props) {
         }}
       >
         {drawer}
+        
       </Drawer>
     </nav>
   );
@@ -297,7 +345,9 @@ export default function Header(props: Props) {
           {renderNavToggler}
           <Box>
 
-          <Button  sx={{
+          <Button 
+          onClick={() => handleClickItem('#download')}
+          sx={{
             fontWeight:'600',
             mx:0.5,
             display:{xs:'none', md:'inline'},

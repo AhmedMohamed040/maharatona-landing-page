@@ -13,46 +13,12 @@ import {
 } from "@mui/material";
 import React from "react";
 import { useTranslations } from "next-intl";
-import { motion, Variants } from "framer-motion";
 
 import Grid from "@mui/material/Unstable_Grid2";
 
 function Section2(): React.JSX.Element {
   const t = useTranslations();
-  const UpVariants: Variants = {
-    offscreen: {
-      y: 100,
-      opacity: 0,
-    },
-    onscreen: {
-      y: 0,
-      opacity: 1,
-
-      transition: {
-        type: "spring",
-        bounce: 0.5,
-        duration: 1,
-        delay:0.5
-      }
-    }
-  };
-  const DownVariants: Variants = {
-    offscreen: {
-      y: -100,
-      opacity: 0,
-    },
-    onscreen: {
-      y: 0,
-      opacity: 1,
-
-      transition: {
-        type: "spring",
-        bounce: 0.5,
-        duration: 0.5,
-        delay:0.5
-      }
-    }
-  };
+ 
   return (
     <Box sx={{ pt: 10, pb: 10, minHeight: 300 }}>
       <Box sx={{ position: "relative", width: "100%" }}>
@@ -62,7 +28,7 @@ function Section2(): React.JSX.Element {
           sx={{
             width: "100%",
             top: 0,
-            transform: { xs: "translate(0%, -20%)", md: "translate(0%, -10%)" },
+            transform: { xs: "translate(0%, -25%)", md: "translate(0%, -10%)" },
             position: "absolute",
           }}
         />
@@ -82,7 +48,7 @@ function Section2(): React.JSX.Element {
             fontWeight="600"
             component="div"
             variant="body1"
-            sx={{ fontSize: { md: "34px", xs: "24px" }, mt: 14 }}
+            sx={{ textAlign:'center',fontSize: { md: "34px", xs: "24px" }, mt: 14 }}
             color="primary.dark"
           >
             {t("Global.Section2.title")}
@@ -93,7 +59,7 @@ function Section2(): React.JSX.Element {
                 component="img"
                 src={"/assets/images/section2/underLine.svg"}
                 sx={{ width: "100%" }}
-                height={{ md: 20, xs: 10 }}
+                height={{md:"17px",xs:'12px'}}
               />
             </span>
           </Typography>
@@ -111,13 +77,7 @@ function Section2(): React.JSX.Element {
                 width: "100%",
               }}
             >
-            <motion.div
-              className="card-container"
-              initial="offscreen"
-              whileInView="onscreen"
-              viewport={{ once: false, amount: 1 }}
-            >
-              <motion.div variants={UpVariants}>
+         
 
               <Box>
                 <Box
@@ -137,17 +97,7 @@ function Section2(): React.JSX.Element {
                   {t("Global.Section2.payment")}
                 </Typography>
               </Box>
-            
-              </motion.div>
-            </motion.div>
-            <motion.div
-              className="card-container"
-              initial="offscreen"
-              whileInView="onscreen"
-              viewport={{ once: false, amount: 1 }}
-            >
-              <motion.div variants={DownVariants}>
-
+           
             
               <Box>
                 <Box
@@ -167,16 +117,7 @@ function Section2(): React.JSX.Element {
                   {t("Global.Section2.branches")}
                 </Typography>
               </Box>
-              </motion.div>
-            </motion.div>
-            <motion.div
-              className="card-container"
-              initial="offscreen"
-              whileInView="onscreen"
-              viewport={{ once: false, amount: 1 }}
-            >
-              <motion.div variants={UpVariants}>
-
+         
               <Box>
                 <Box
                   component="img"
@@ -196,16 +137,6 @@ function Section2(): React.JSX.Element {
                 </Typography>
               </Box>
        
-              </motion.div>
-            </motion.div>
-            <motion.div
-              className="card-container"
-              initial="offscreen"
-              whileInView="onscreen"
-              viewport={{ once: false, amount: 1 }}
-            >
-              <motion.div variants={DownVariants}>
-
               <Box>
                 <Box
                   component="img"
@@ -225,9 +156,6 @@ function Section2(): React.JSX.Element {
                 </Typography>
               </Box>
        
-              </motion.div>
-            </motion.div>
-           
             
             </Box>
           </Container>

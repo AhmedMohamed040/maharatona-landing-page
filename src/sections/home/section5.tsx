@@ -93,7 +93,7 @@ function Section5(): React.JSX.Element {
               className="card-container"
               initial="offscreen"
               whileInView="onscreen"
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <motion.div variants={upSide}>
               <Accordion   sx={{p:{md:2,xs:1},textAlign:currentLang==='ar'?"right":"left", '&.MuiAccordion-root':{borderRadius:2},}}>
@@ -120,7 +120,7 @@ function Section5(): React.JSX.Element {
               className="card-container"
               initial="offscreen"
               whileInView="onscreen"
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <motion.div variants={upSide}>
               <Accordion   sx={{p:{md:2,xs:1},textAlign:"right",  '&.MuiAccordion-root':{borderRadius:2},}}>
@@ -147,7 +147,7 @@ function Section5(): React.JSX.Element {
               className="card-container"
               initial="offscreen"
               whileInView="onscreen"
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <motion.div variants={upSide}>
               <Accordion   sx={{p:{md:2,xs:1}, textAlign:currentLang==='ar'?"right":"left", '&.MuiAccordion-root':{borderRadius:2},}}>
@@ -177,7 +177,7 @@ function Section5(): React.JSX.Element {
               className="card-container"
               initial="offscreen"
               whileInView="onscreen"
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <motion.div variants={upSide}>
                
@@ -205,7 +205,7 @@ function Section5(): React.JSX.Element {
               className="card-container"
               initial="offscreen"
               whileInView="onscreen"
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <motion.div variants={upSide}>
                
