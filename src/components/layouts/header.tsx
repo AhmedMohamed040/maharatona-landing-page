@@ -159,10 +159,10 @@ export default function Header(props: Props) {
                 fontWeight="light"
                 component={Link}
                 href={item.href}
-                color="inherit"
+                color="primary.dark"
                 sx={{ textDecoration: "none" }}
               >
-                {item.label}
+                 {t(`Global.Navbar.${item.label}`)}
               </Typography>
             </ListItemButton>
           </ListItem>
