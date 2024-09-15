@@ -186,7 +186,7 @@ function Section4(): React.JSX.Element {
                 <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: { xs: 'center', md: 'end' }, flexDirection: 'column' }}>
                   <Box
                     component="img"
-                    src={"/assets/images/section4/wallet.svg"}
+                    src={"/assets/images/section4/card.svg"}
                     height={{ md: 70, xs: 70 }}
                   />
                   <br />

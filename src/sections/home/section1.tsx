@@ -61,7 +61,7 @@ function Section1(): React.JSX.Element {
 
       <Container >
         <Grid id="home" container spacing={0} justifyContent={{ md: 'space-between', xs: 'center' }}>
-          <Grid xs={12} md={6} sx={{ mt: { xs: 4, md: 10 } }}>
+          <Grid xs={12} md={6} sx={{ mt: { xs: 0, md: 10 } }}>
           <motion.div
               className="card-container"
               initial="offscreen"
@@ -83,7 +83,7 @@ function Section1(): React.JSX.Element {
           <Grid xs={12} md={6} display="flex" sx={{
             alignItems: 'center',
             justifyContent: { xs: 'center', md: 'flex-end' },
-            mt: { xs: 10, md: 17 }
+            mt: { xs: 5, md: 0 }
           }}>
             <Box sx={{ display: { md: 'block', xs: 'none' }, position: 'absolute', }}>
               <Box component="img" src="/assets/images/section1/background.svg" sx={{ zIndex: -1, height: "auto", width: 600, transform: 'translate(22%, 4%)', }} />
@@ -94,7 +94,7 @@ function Section1(): React.JSX.Element {
               <Box component={'span'} sx={{ fontSize: { md: '24px', xs: '17px' } }}>
 
                 {t('Global.Section1.mainText1')}
-                <span style={{ backgroundColor: '#ebf8f8', borderRadius: 15 }}>{t('Global.Section1.subText1')}</span>
+                <span style={{margin:'0 7px', backgroundColor: '#ebf8f8', borderRadius: 15 }}>{t('Global.Section1.subText1')}</span>
               </Box>
               <Box component={'span'} sx={{ fontSize: { md: '24px', xs: '17px' } }}>
 
@@ -123,7 +123,7 @@ function Section1(): React.JSX.Element {
             >
               <motion.div variants={cardVariants}>
 
-                <Button variant="contained" sx={{ fontSize: { md: '19px', xs: '14px' }, borderRadius: 2, borderTopLeftRadius: 50, py: 2, px: 4, bgcolor: '#3cb8bb' }}>
+                <Button variant="contained" sx={{mt:{xs:0,md:-12}, fontSize: { md: '19px', xs: '14px' }, borderRadius: 2, borderTopLeftRadius: 50, py: 2, px: 4, bgcolor: '#3cb8bb' }}>
                   {t('Global.Section1.register')}
                 </Button>
               </motion.div>
@@ -138,4 +138,4 @@ function Section1(): React.JSX.Element {
 }
 
 export default Section1;
-/*   */
+
