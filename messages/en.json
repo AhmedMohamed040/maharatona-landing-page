@@ -36,6 +36,8 @@
       "terms":"I agree to the terms and conditions",
       "name":"Name",
       "email":"Email",
+      "option1":"Title 1",
+      "option2":"Title 2",
       "message":"Message subject",
       "send":"Send message"
     },
