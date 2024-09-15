@@ -63,20 +63,14 @@ function Section3(): React.JSX.Element {
             component="img"
             alt="green iguana"
             sx={{
-              disply: { md: "block", xs: "none" },
+              display: { md: "block", xs: "none" },
               height: 100,
               maxWidth: 70,
               my: "auto",
             }}
             image={"/assets/images/section3/Icons.svg"}
           />
-          <motion.div
-            className="card-container"
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: false, amount: 0.2 }}
-          >
-            <motion.div variants={leftSide}>
+       
               <CardMedia
                 component="img"
                 alt="green iguana"
@@ -90,8 +84,7 @@ function Section3(): React.JSX.Element {
                 }}
                 image={"/assets/images/section3/Left.png"}
               />
-            </motion.div>
-          </motion.div>
+        
         </Grid>
         <Grid
           xs={12}
@@ -129,7 +122,7 @@ function Section3(): React.JSX.Element {
               textOverflow: "nowrap",
               fontSize: { md: "40px", xs: "24px" },
               lineHeight: 2,
-              textAlign: "right",
+              textAlign: {md:"right", xs:'center'},
             }}
           >
             {t("Global.Section3.mainText")}{" "}
@@ -165,6 +158,7 @@ function Section3(): React.JSX.Element {
                   unicodeBidi: "embed",
                   direction: currentLang === 'ar'? "rtl":"ltr" ,
                   mt: 2,
+                  textAlign: {md:"right", xs:'center'},
                   textOverflow: "wrap",
                   fontSize: { md: "18px", xs: "16px" },
                   lineHeight: 2,

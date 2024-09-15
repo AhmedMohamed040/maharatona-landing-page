@@ -79,7 +79,7 @@ function Section4(): React.JSX.Element {
               className="card-container"
               initial="offscreen"
               whileInView="onscreen"
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <motion.div variants={leftSide}>
                 <CardMedia
@@ -108,13 +108,13 @@ function Section4(): React.JSX.Element {
             }}
           >
             
-            <Grid container spacing={5} gap={5} sx={{mr:{md:7,xs:0},width: '100%' }} flexDirection="column" justifyContent="center" alignItems="center">
+            <Grid container spacing={5} gap={5} sx={{mr:{md:7,xs:'none'},width: '100%' }} flexDirection="column" justifyContent="center" alignItems="center">
               <Grid xs={12}>
                 <Typography
                   fontWeight="600"
                   component="div"
                   variant="body1"
-                  sx={{ fontSize: { md: "34px", xs: "24px" }, mt: 4 }}
+                  sx={{ textAlign:'center',fontSize: { md: "34px", xs: "24px" }, mt: 4 }}
                   color="primary.dark"
                 >
                   {t("Global.Section4.title")}
@@ -125,13 +125,13 @@ function Section4(): React.JSX.Element {
                       component="img"
                       src={"/assets/images/section4/underLine.svg"}
                       sx={{ width: "100%" }}
-                      height={{ md: 20, xs: 10 }}
+                      height={{md:"17px",xs:'12px'}}
                     />
                   </span>
                 </Typography>
               </Grid>
               <Grid xs={12} gap={7} sx={{ width: { xs: 'auto', md: '100%' }, display: "flex", flexDirection: { xs: 'column', md: 'row' }, justifyContent: { xs: 'center', md: 'space-between' }, alginItems: "center" }}>
-                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: { xs: 'center', md: 'end' }, flexDirection: 'column' }}>
+                <Box sx={{textAlign:'center', display: 'flex', justifyContent: 'center', alignItems: { xs: 'center', md: 'end' }, flexDirection: 'column' }}>
                   <Box
                     component="img"
                     src={"/assets/images/section4/3dcube.svg"}
@@ -148,7 +148,7 @@ function Section4(): React.JSX.Element {
                     {t("Global.Section4.browserCourses")}
                   </Typography>
                 </Box>
-                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: { xs: 'center', md: 'end' }, flexDirection: 'column' }}>
+                <Box sx={{textAlign:'center', display: 'flex', justifyContent: 'center', alignItems: { xs: 'center', md: 'end' }, flexDirection: 'column' }}>
                   <Box
                     component="img"
                     src={"/assets/images/section4/mouse-square.svg"}
@@ -200,7 +200,7 @@ function Section4(): React.JSX.Element {
                   </Typography>
                 </Box>
               </Grid>
-              <Grid xs={12}>
+              <Grid id="download" xs={12}>
                 <Typography
                   fontWeight="600"
                   component="div"
@@ -212,12 +212,12 @@ function Section4(): React.JSX.Element {
 
                 </Typography>
               </Grid>
-              <Grid xs={12} gap={3} sx={{ display: "flex", flexDirection: { xs: 'column', md: 'row' }, justifyContent: { xs: 'center', md: 'space-between' }, alginItems: "center" }}>
+              <Grid  xs={12} gap={3} sx={{ display: "flex", flexDirection: { xs: 'column', md: 'row' }, justifyContent: { xs: 'center', md: 'space-between' }, alginItems: "center" }}>
               <motion.div
               className="card-container"
               initial="offscreen"
               whileInView="onscreen"
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <motion.div variants={upSide}>
               
@@ -232,7 +232,7 @@ function Section4(): React.JSX.Element {
               className="card-container"
               initial="offscreen"
               whileInView="onscreen"
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <motion.div variants={downSide}>
               
