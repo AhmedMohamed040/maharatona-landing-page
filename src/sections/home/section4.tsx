@@ -16,9 +16,11 @@ import { useTranslations } from "next-intl";
 import { motion, Variants } from "framer-motion";
 
 import Grid from "@mui/material/Unstable_Grid2";
+import { useLocale } from "next-intl";
 
 function Section4(): React.JSX.Element {
   const t = useTranslations();
+  const currentLang = useLocale();
 
   const downSide: Variants = {
     offscreen: {
@@ -108,7 +110,7 @@ function Section4(): React.JSX.Element {
             }}
           >
             
-            <Grid container spacing={5} gap={5} sx={{mr:{md:7,xs:'none'},width: '100%' }} flexDirection="column" justifyContent="center" alignItems="center">
+            <Grid container spacing={5} gap={5} sx={{ direction:currentLang === 'ar'?'rtl':'ltr',mr:{md:7,xs:'none'},width: '100%' }} flexDirection="column" justifyContent="center" alignItems="center">
               <Grid xs={12}>
                 <Typography
                   fontWeight="600"

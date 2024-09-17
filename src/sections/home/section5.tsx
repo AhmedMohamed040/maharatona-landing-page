@@ -123,7 +123,7 @@ function Section5(): React.JSX.Element {
               viewport={{ once: true, amount: 0.2 }}
             >
               <motion.div variants={upSide}>
-              <Accordion   sx={{p:{md:2,xs:1},textAlign:"right",  '&.MuiAccordion-root':{borderRadius:2},}}>
+              <Accordion   sx={{p:{md:2,xs:1},textAlign:currentLang==='ar'?"right":"left",  '&.MuiAccordion-root':{borderRadius:2},}}>
                 <AccordionSummary
                  
                   expandIcon={<Iconify color="#c434d5" icon="ph:caret-down-bold" />}
