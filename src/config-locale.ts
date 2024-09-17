@@ -5,8 +5,8 @@ export type Locales = "en" | "ar";
 export const locales: Locales[] = ["en", "ar"];
 export const defaultLocale: Locales = "ar";
 export const LocalesNames = {
-  en: "English",
   ar: "Arabic",
+  en: "English",
 };
 
 export const pathnames: Pathnames<typeof locales> = {
