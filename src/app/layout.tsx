@@ -38,7 +38,7 @@ export default function RootLayout({
       <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
       <meta http-equiv="Pragma" content="no-cache" />
       <meta http-equiv="Expires" content="0" />
-      <link rel="icon" href="favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="favicon.ico?v=2" type="image/x-icon" />
       </Head>
       <body >{children}</body>
     </html>
