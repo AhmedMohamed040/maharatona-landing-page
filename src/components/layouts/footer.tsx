@@ -11,10 +11,12 @@ import {
   Container,
   IconButton,
   Typography,
+  Link
 
 } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import Link from "next/link";
+import RouterLink from "next/link";
+
 import Iconify from "../iconify";
 
 // ----------------------------------------------------------------------
@@ -54,7 +56,12 @@ export default function Footer(props: Props) {
                 </IconButton>
               </Box>
             </Grid>
-            <Grid xs={12} md={4} sx={{ display: "flex", justifyContent:   'center'  }}>
+            <Grid xs={12} md={4} sx={{ display: "flex",flexDirection:'column', justifyContent:   'center'  , textAlign:'center'}}>
+            <Link sx={{my:2, fontWeight:'bold'}} underline="hover" variant="body1" color="primary.dark" href="/privacy"
+             component={RouterLink}  >
+              {t('Global.Footer.Privacy_Policy')}
+              </Link >
+              
               <Typography variant="body2" color="primary.dark" fontWeight="600">
                {t('Global.Footer.Copyright')}
               </Typography>

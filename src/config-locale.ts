@@ -23,6 +23,10 @@ export const pathnames: Pathnames<typeof locales> = {
     en: "/partner",
     ar: "/partner",
   },
+  "/privacy": {
+    en: "/privacy",
+    ar: "/privacy",
+  },
   "/categories": {
     en: "/categories",
     ar: "/categories",
