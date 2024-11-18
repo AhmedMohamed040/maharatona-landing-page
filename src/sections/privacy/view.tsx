@@ -29,17 +29,17 @@ function PrivacyView(): React.JSX.Element {
         Last updated: November 14, 2024
       </Typography>
       <Typography variant="body1" color="primary.dark" sx={{ my: 2 }}>
-        This Privacy Policy describes Our policies and procedures on the
+      {`  This Privacy Policy describes Our policies and procedures on the
         collection, use and disclosure of Your information when You use the
         Service and tells You about Your privacy rights and how the law protects
-        You.
+        You.`}
       </Typography>
       <Box sx={{ my: 2 }}>
         <Typography variant="body1" color="primary.dark">
-          We use Your Personal data to provide and improve the Service. By using
+         {` We use Your Personal data to provide and improve the Service. By using
           the Service, You agree to the collection and use of information in
           accordance with this Privacy Policy. This Privacy Policy has been
-          created with the help of the
+          created with the help of the`}
           <Link
             sx={{ mx: 1 }}
             variant="body1"
@@ -65,10 +65,10 @@ function PrivacyView(): React.JSX.Element {
           Interpretation
         </Typography>
         <Typography variant="body1" color="primary.dark" sx={{ my: 2 }}>
-          The words of which the initial letter is capitalized have meanings
+          {`The words of which the initial letter is capitalized have meanings
           defined under the following conditions. The following definitions
           shall have the same meaning regardless of whether they appear in
-          singular or in plural.
+          singular or in plural.`}
         </Typography>
         <Typography
           variant="h6"
@@ -98,10 +98,10 @@ function PrivacyView(): React.JSX.Element {
           <ListItem dense sx={{ display: "list-item", p: 0, my: 0, py: 1 }}>
             <Typography variant="body1" color="primary.dark">
               <strong>Affiliate </strong>
-              means an entity that controls, is controlled by or is under common
+            {`  means an entity that controls, is controlled by or is under common
               control with a party, where "control" means ownership of 50% or
               more of the shares, equity interest or other securities entitled
-              to vote for election of directors or other managing authority.
+              to vote for election of directors or other managing authority.`}
             </Typography>
           </ListItem>
           <ListItem dense sx={{ display: "list-item", p: 0, my: 0, py: 1 }}>
@@ -153,12 +153,12 @@ function PrivacyView(): React.JSX.Element {
           <ListItem dense sx={{ display: "list-item", p: 0, my: 0, py: 1 }}>
             <Typography variant="body1" color="primary.dark">
               <strong>Service Provider </strong>
-              means any natural or legal person who processes the data on behalf
+            {`  means any natural or legal person who processes the data on behalf
               of the Company. It refers to third-party companies or individuals
               employed by the Company to facilitate the Service, to provide the
               Service on behalf of the Company, to perform services related to
               the Service or to assist the Company in analyzing how the Service
-              is used.
+              is used.`}
             </Typography>
           </ListItem>
           <ListItem dense sx={{ display: "list-item", p: 0, my: 0, py: 1 }}>
@@ -253,11 +253,11 @@ function PrivacyView(): React.JSX.Element {
           Usage Data is collected automatically when using the Service.
         </Typography>
         <Typography variant="body1" color="primary.dark" sx={{ my: 2 }}>
-          Usage Data may include information such as Your Device's Internet
+         {` Usage Data may include information such as Your Device's Internet
           Protocol address (e.g. IP address), browser type, browser version, the
           pages of our Service that You visit, the time and date of Your visit,
           the time spent on those pages, unique device identifiers and other
-          diagnostic data.
+          diagnostic data.`}
         </Typography>
         <Typography variant="body1" color="primary.dark" sx={{ my: 2 }}>
           When You access the Service by or through a mobile device, We may
@@ -298,10 +298,10 @@ function PrivacyView(): React.JSX.Element {
           </ListItem>
         </List>
         <Typography variant="body1" color="primary.dark" sx={{ my: 2 }}>
-          We use this information to provide features of Our Service, to improve
+        {`  We use this information to provide features of Our Service, to improve
           and customize Our Service. The information may be uploaded to the
           Company's servers and/or a Service Provider's server or it may be
-          simply stored on Your device.{" "}
+          simply stored on Your device.`}
         </Typography>
         <Typography variant="body1" color="primary.dark" sx={{ my: 2 }}>
           You can enable or disable access to this information at any time, through Your Device settings.
@@ -314,7 +314,7 @@ function PrivacyView(): React.JSX.Element {
           Tracking Technologies and Cookies
         </Typography>
         <Typography variant="body1" color="primary.dark" sx={{ my: 2 }}>
-          We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include:
+         {` We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include:`}
         </Typography>
         <List
           sx={{
@@ -337,7 +337,7 @@ function PrivacyView(): React.JSX.Element {
           </ListItem>
         </List>
         <Typography variant="body1" color="primary.dark">
-          Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies on the
+         {` Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies on the`}
           <Link
             sx={{ mx: 1 }}
             variant="body1"
@@ -626,7 +626,7 @@ function PrivacyView(): React.JSX.Element {
           color="primary.dark"
           sx={{ fontWeight: "600", my: 2 }}
         >
-        Children's Privacy
+      {`  Children's Privacy`}
         </Typography>
         <Typography variant="body1" color="primary.dark" sx={{ my: 2 }}>
         {`Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.`}
